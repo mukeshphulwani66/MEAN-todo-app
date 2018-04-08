@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng build & node server",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
@@ -23,7 +23,13 @@
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "mongojs": "^2.5.0",
+    "mongoose": "^5.0.12"
+
   },
   "devDependencies": {
     "@angular/cli": "~1.7.3",
