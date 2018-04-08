@@ -1,12 +1,14 @@
 var express = require('express');
 var router = express.Router();
 var mongojs = require('mongojs');
-var db = mongojs('mongodb://mukesh:sahilmukesh%4012@ds125469.mlab.com:25469/meantodo_bymukesh',['tasks']);
+
+// put your database link here
+var db = mongojs('mongodb://something:something@something/dbname',['tasks']);
 /* 
 /** IF USING mongoose instead of mongojs
 
 var db = require('mongoose');
-db.connect('mongodb://mukesh:sahilmukesh%4012@ds125469.mlab.com:25469/meantodo_bymukesh');
+db.connect('mongodb://something:something@something/dbname');
 db.Promise = global.Promise;
 var tasksh = db.Schema({
   title: String,
